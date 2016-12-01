@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+			and			和、与 （连接媒体特性）
+			not			排除指定媒体类型
+			only		指定某种特定的媒体类型
+				很多时候是用来对那些不支持媒体特性但却支持媒体类型的设备
+		-->
+		<style>
+			div{
+				width: 400px;
+				height: 400px;
+				background-color: red;
+			}
+			/*@media tv and (orientation:portrait){
+				div{
+					background-color: yellow;
+				}
+			}*/
+			@media only tv{
+				div{
+					background-color: yellow;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

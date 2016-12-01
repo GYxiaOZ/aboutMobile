@@ -1,0 +1,11 @@
+﻿var UA = window.navigator.userAgent;
+var CLICK = 'click';
+if(/ipad|iphone|android/.test(UA)){
+    CLICK = 'tap'
+}
+xxx[CLICK](function(){
+    
+});
+
+把padding和border算到宽度里
+box-sizing:border-box;

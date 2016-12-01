@@ -1,0 +1,53 @@
+父容器: [
+display:flex
+    flex-direction 设置主轴方向
+        row  从左向右排列(默认值)
+        row-reverse 从右向左排列
+        column 从上往下排列
+        column-reverse 从下往上排列
+
+justify-content 主轴对齐
+    flex-start (默认) 元素在开始位置 剩余空间占据另一侧
+    flex-end 富裕空间在开始位置 元素占据另一侧
+    center 元素居中 富裕空间 平分左右两侧
+    space-between 富裕空间在元素之间平均分配
+    space-around  富裕空间在元素两侧平均分配  
+
+align-items 侧轴对齐
+    flex-start (默认) 元素在开始位置 剩余空间占据另一侧
+    flex-end 富裕空间在开始位置 元素占据另一侧
+    center 元素居中 富裕空间 平分左右两侧    
+
+flex-wrap 换行
+    nowrap (默认)
+    wrap 换行
+    wrap-reverse 反向换行  
+
+align-content 堆栈伸缩行
+    align-content 会更改 flex-wrap 的行为。它和 align-items 相似，但是,不是对齐伸缩项目，它对齐的是伸缩行。
+    flex-start (默认) 元素在开始位置 富裕空间占据另一侧
+    flex-end 富裕空间在开始位置 元素占据另一侧
+    center 元素居中 富裕空间 平分左右两侧
+    space-between 富裕空间在元素之间平均分配
+    space-around  富裕空间在元素两侧平均分配
+    
+flex-flow
+    flex-flow 是 flex-direction 和 flex-wrap 的缩写
+    flex-flow: [flex-direction] [flex-wrap]
+]
+
+子容器: [
+order 显示顺序
+    数字越大，显示越靠后，支持负数
+
+flex 伸缩性
+    flex: [num]
+    flex: none
+
+align-self 子元素侧轴对齐
+    flex-start (默认) 元素在开始位置 富裕空间占据另一侧
+    flex-end 富裕空间在开始位置 元素占据另一侧
+    center 元素居中 富裕空间 平分左右两侧
+
+只有一个子容器，设置margin:auto,水平垂直居中
+]
